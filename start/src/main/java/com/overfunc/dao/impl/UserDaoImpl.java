@@ -5,9 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.overfunc.dao.UserDao;
+import com.overfunc.vo.User;
 
 @Repository
 public class UserDaoImpl implements UserDao {
 	@Autowired
 	private SqlSession sqlSession;
+	
+	public User getUser(String id) {
+		return sqlSession.selectOne("users.getUser", id);
+	}
 }

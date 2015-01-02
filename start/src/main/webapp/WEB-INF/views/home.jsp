@@ -17,6 +17,10 @@
 			$.ajax({
 				url : 'test.htm',
 				type : 'GET',
+				data : {
+					login_id : 'kykkyn2',
+					login_pwd : '123456'
+				},
 				success : function(res){
 					
 					console.log(res);

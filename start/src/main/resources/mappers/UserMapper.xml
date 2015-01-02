@@ -19,8 +19,8 @@
 	</select>
 	
 	<insert id="insertUser"  parameterType="com.overfunc.vo.User" >
-		insert into userinfo (userid, username, userpwd, email, phone, address)
-		values ( #{userid}, #{username}, #{userpwd}, #{email}, #{phone}, #{address})
+		insert into user ( id, password )
+		values ( #{id}, #{password})
 	</insert>
 	
 	<update id="modifyUser"  parameterType="com.overfunc.vo.User" >

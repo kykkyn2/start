@@ -1,5 +1,9 @@
 package com.overfunc.dao;
 
+import com.overfunc.vo.User;
+
 public interface UserDao {
-	//int deleteBilling(long id);
+	
+	int userInsert( User user );
+	
 }

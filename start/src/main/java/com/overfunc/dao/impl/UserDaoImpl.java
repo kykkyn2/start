@@ -11,8 +11,9 @@ import com.overfunc.vo.User;
 public class UserDaoImpl implements UserDao {
 	@Autowired
 	private SqlSession sqlSession;
-	
-	public User getUser(String id) {
-		return sqlSession.selectOne("users.getUser", id);
+
+	@Override
+	public int userInsert( User user) {
+		return sqlSession.insert( "users.insertUser", user );
 	}
 }

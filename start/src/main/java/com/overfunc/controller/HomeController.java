@@ -2,13 +2,10 @@ package com.overfunc.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +19,6 @@ import com.overfunc.service.UserService;
 
 @Controller
 public class HomeController {
-	
 	
 	@Autowired
 	private UserService userService;
@@ -49,13 +45,15 @@ public class HomeController {
 		//Map<String,Object> nMap = new HashMap<String, Object>();
 		//nMap.put("you", "babo");
 		//request.setAttribute("data", nMap);
-		
+		return userService.userInsert(request);
+		/*
 		JSONObject jsonData = new JSONObject();
 		jsonData.put("you", "babo");
 		
 		request.setAttribute("data",  jsonData );
 		
 		return "server_response";
+		*/
 	}
 	
 	

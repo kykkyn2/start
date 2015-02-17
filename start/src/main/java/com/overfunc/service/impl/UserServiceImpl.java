@@ -1,10 +1,8 @@
 package com.overfunc.service.impl;
 
-import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 
 import org.json.JSONObject;
-import org.junit.Ignore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

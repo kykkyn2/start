@@ -9,7 +9,7 @@ import java.net.*;
 import java.util.*;
 
 public class Google {
-  public static final String GOOGLE_ACCOUNT_USERNAME = "email"; // Fill in google account username
+  public static final String GOOGLE_ACCOUNT_USERNAME = "kykkyn2@gmail.com"; // Fill in google account username
   public static final String GOOGLE_ACCOUNT_PASSWORD = "passwd"; // Fill in google account password
   public static final String SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1I32XJzwfSr_sWgPuO8ZfR8xmAVTFYfwQsE86ED7Q-oc"; //Fill in google spreadsheet URI
   

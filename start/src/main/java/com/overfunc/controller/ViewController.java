@@ -14,5 +14,10 @@ public class ViewController {
         return "index";
     }
     
+    @RequestMapping(value = "/docs.htm", method = RequestMethod.GET)
+    public String gooGleIndex(HttpServletRequest request) {
+        return "docs";
+    }
+    
     
 }
